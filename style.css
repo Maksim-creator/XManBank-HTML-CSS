@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTCond';
+    src: url(./fonts/HelveticaNeueLT-BlackCondObl.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./img/layer_1_2.png') center center/cover no-repeat;
+}
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    padding: 30px 30px 0 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: #eae6e9;
+}
+
+.line {
+    height: 10px;
+    width: inherit;
+    background-color: #111;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-links a {
+    
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #595959;
+    text-decoration: none;
+}
+
+.header-links a:last-child {
+    color:  #c42d21;
+}
+
+.header-links a::before {
+    content: '| ';
+    color:  #595959;
+}
+
+.header-links a:first-child::before {
+    content:  ' '
+}
+
+.nav_item {
+    list-style-type: none;
+}
+
+.nav_item {
+    
+}
+
+.nav_items {
+    display: flex;
+    margin-top: 25px;
+    background: linear-gradient(to top, #a21b11 0%, #c24c3b 100%);
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav_item a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 14px 34px;
+}
+
+.nav_item a:hover {
+    background-color: rgb(110, 62, 62);
+}
+
+.nav_wrapper {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 10px 13px; */
+}
+
+.nav_contact {
+    text-align: center;
+    font-family: 'HelveticaLTStd';
+    font-size: 18px;
+    line-height: 46.78px;
+    font-weight: 700;
+    color: #ececec;
+    width: 35%;
+    background-image: linear-gradient(0.0deg, #1f1f1f 0%, #454545 100%);
+}
+
+.main_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider {
+    background-color: #d5392d;
+    width: 70%;
+}
+
+.slider_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding: 65px 15px 40px 15px;
+    box-sizing: border-box;
+}
+
+.slider_wrapper .slider_text-g {
+    font-family: 'BebasNeue';
+    font-size: 48px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f6ee79;
+    margin-bottom: 20px;
+}
+
+.slider_wrapper .slider_text-w {
+    margin-top: 15px;
+    font-family: 'BebasNeue';
+    font-size: 34px;
+    line-height: 31px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ebe8e8;
+    line-height: 1.2;
+}
+
+.dot_wrapper {
+    float: right;
+    width: 50px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background-color: black; 
+}
+
+.login_header {
+    display: flex;
+    align-items: center;
+    /* padding: 20px 0 10px 25px; */
+}
+
+.fas.fa-user {
+    margin-right: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.login {
+    width: 28%;
+    background-color: #202020;
+}
+
+.login_wrapper {
+    padding: 15px 23px;
+}
+
+.login_header-text {
+    font-family: 'BebasNeue';
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ececec;
+}
+
+.login_form .input_data {
+    width: 100%;
+    padding: 7px 15px;
+    margin-top: 15px;
+    box-sizing:border-box
+}
+
+form span, .forget_pass {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #e4e7e7;
+}
+
+.remember_check {
+    padding: 14px;
+    text-align: center;
+}
+
+.login_btn {
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.25);
+    font-family: 'HelveticaNeueLTCond';
+    font-size: 18px;
+    font-weight: 400;
+    color: #ececec;
+    background-color: #df4234;
+    border: none;
+    border-radius: 2px;
+    padding: 6px 15px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 15px;
+}
+
+.login_text {
+    font-family: 'HelveticaNeueLTCond';
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #ececec;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.special, .works {
+    padding: 23px 15px 0 10px;
+}
+
+.special_items {
+    list-style-type: none;  
+    padding: 0;
+}
+
+.special_items .item {
+    display: flex;
+    font-family: HelveticaNeue;
+    align-items: center;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #737070;
+}
+
+.special_items .item i {
+    padding-right: 10px;
+    color: #c22c20;
+}
+
+
+.special_title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #595959;
+}
+
+.special_title span {
+    color: #e24335;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.works_wrapper {
+    position: relative;
+    background-color:white;
+    border: 1px grey solid;
+    border-radius: 3px;
+    margin-top: 18px;
+}
+
+.arrows {
+    position: absolute;
+}
+
+.works_items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #737070;
+    text-align: center;
+    padding: 17px 24px 17px 24px;
+}
+
+.works_items .works_item {
+    padding: 0 40px;
+}
+
+.footer {
+    padding: 22px;
+    margin:  0 -31px;
+    width: inherit;
+    color:white;
+    display: flex;
+    /* box-sizing:border-box; */
+    /* padding: 10px 20px; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #201d1d;
+}
+
+.footer .left {
+    font-family: BebasNeue;
+    font-size: 28px;
+    line-height: 31px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ebe8e8;
+}
+
+.footer .right {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ececec;
+}
